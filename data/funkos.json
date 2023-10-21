@@ -1,0 +1,721 @@
+[{
+"uuid":"3b6c6f58-79b9-434b-82ab-001a2d6e4434",
+"nombre":"Spiderman Delight",
+"tipo":"MARVEL",
+"precio":15.99,
+"fecha_cre":"2022-05-01",
+"myID":1
+},
+{
+"uuid":"f8f7ae42-5b01-4d3b-82ab-02d1a2d6e443",
+"nombre":"Stitch Hula",
+"tipo":"DISNEY",
+"precio":25.99,
+"fecha_cre":"2023-01-01",
+"myID":2
+},
+{
+"uuid":"6b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Naruto Shippuden",
+"tipo":"ANIME",
+"precio":19.99,
+"fecha_cre":"2022-08-01",
+"myID":3
+},
+{
+"uuid":"a8f7ae42-5b01-4d3b-82ab-02d1a2d6e443",
+"nombre":"Iron Man Classic",
+"tipo":"MARVEL",
+"precio":18.99,
+"fecha_cre":"2022-06-01",
+"myID":4
+},
+{
+"uuid":"0b6c6f58-7c6b-434b-82ab-01b2d6e4434a",
+"nombre":"Stitch Space Suit",
+"tipo":"DISNEY",
+"precio":22.99,
+"fecha_cre":"2023-02-01",
+"myID":5
+},
+{
+"uuid":"5b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"One Piece Luffy",
+"tipo":"ANIME",
+"precio":19.99,
+"fecha_cre":"2022-08-01",
+"myID":6
+},
+{
+"uuid":"0c6c6f58-7c6b-434b-82ab-01b2d6e4434a",
+"nombre":"Captain America Shield",
+"tipo":"MARVEL",
+"precio":20.99,
+"fecha_cre":"2022-07-01",
+"myID":7
+},
+{
+"uuid":"0d6c6f58-7c6b-434b-82ab-01b2d6e4434a",
+"nombre":"Stitch Surfer",
+"tipo":"DISNEY",
+"precio":23.99,
+"fecha_cre":"2023-03-01",
+"myID":8
+},
+{
+"uuid":"0e6c6f58-7c6b-434b-82ab-01b2d6e4434a",
+"nombre":"Attack on Titan Eren",
+"tipo":"ANIME",
+"precio":21.99,
+"fecha_cre":"2022-09-01",
+"myID":9
+},
+{
+"uuid":"0f6c6f58-7c6b-434b-82ab-01b2d6e4434a",
+"nombre":"Thor Hammer",
+"tipo":"MARVEL",
+"precio":16.99,
+"fecha_cre":"2022-10-01",
+"myID":10
+},
+{
+"uuid":"1b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Stitch Guitar",
+"tipo":"DISNEY",
+"precio":24.99,
+"fecha_cre":"2023-04-01",
+"myID":11
+},
+{
+"uuid":"2b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"My Hero Academia Deku",
+"tipo":"ANIME",
+"precio":20.99,
+"fecha_cre":"2022-11-01",
+"myID":12
+},
+{
+"uuid":"3b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Hulk Smash",
+"tipo":"MARVEL",
+"precio":17.99,
+"fecha_cre":"2022-12-01",
+"myID":13
+},
+{
+"uuid":"4b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Stitch Alien",
+"tipo":"DISNEY",
+"precio":26.99,
+"fecha_cre":"2023-05-01",
+"myID":14
+},
+{
+"uuid":"5b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Dragon Ball Goku",
+"tipo":"ANIME",
+"precio":22.99,
+"fecha_cre":"2022-01-01",
+"myID":15
+},
+{
+"uuid":"6b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Black Widow Spy",
+"tipo":"MARVEL",
+"precio":18.99,
+"fecha_cre":"2022-02-01",
+"myID":16
+},
+{
+"uuid":"7b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Stitch King",
+"tipo":"DISNEY",
+"precio":27.99,
+"fecha_cre":"2023-06-01",
+"myID":17
+},
+{
+"uuid":"8b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"One Punch Man",
+"tipo":"ANIME",
+"precio":23.99,
+"fecha_cre":"2022-03-01",
+"myID":18
+},
+{
+"uuid":"9b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Thanos Infinity",
+"tipo":"MARVEL",
+"precio":19.99,
+"fecha_cre":"2022-04-01",
+"myID":19
+},
+{
+"uuid":"ab6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Stitch Pilot",
+"tipo":"DISNEY",
+"precio":28.99,
+"fecha_cre":"2023-07-01",
+"myID":20
+},
+{
+"uuid":"1b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Batman Dark",
+"tipo":"MARVEL",
+"precio":21.99,
+"fecha_cre":"2023-08-01",
+"myID":21
+},
+{
+"uuid":"2b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Stitch Santa",
+"tipo":"DISNEY",
+"precio":29.99,
+"fecha_cre":"2023-09-01",
+"myID":22
+},
+{
+"uuid":"3b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Bleach Ichigo",
+"tipo":"ANIME",
+"precio":24.99,
+"fecha_cre":"2022-05-01",
+"myID":23
+},
+{
+"uuid":"4b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Wolverine Claws",
+"tipo":"MARVEL",
+"precio":22.99,
+"fecha_cre":"2023-10-01",
+"myID":24
+},
+{
+"uuid":"5b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Stitch Chef",
+"tipo":"DISNEY",
+"precio":30.99,
+"fecha_cre":"2023-11-01",
+"myID":25
+},
+{
+"uuid":"6b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Death Note Light",
+"tipo":"ANIME",
+"precio":25.99,
+"fecha_cre":"2022-06-01",
+"myID":26
+},
+{
+"uuid":"7b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Hawkeye Archer",
+"tipo":"MARVEL",
+"precio":23.99,
+"fecha_cre":"2023-12-01",
+"myID":27
+},
+{
+"uuid":"8b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Stitch Doctor",
+"tipo":"DISNEY",
+"precio":31.99,
+"fecha_cre":"2022-07-01",
+"myID":28
+},
+{
+"uuid":"9b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Sword Art Online Kirito",
+"tipo":"ANIME",
+"precio":26.99,
+"fecha_cre":"2022-08-01",
+"myID":29
+},
+{
+"uuid":"ab6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Captain Marvel Flight",
+"tipo":"MARVEL",
+"precio":24.99,
+"fecha_cre":"2023-01-01",
+"myID":30
+},
+{
+"uuid":"bb6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Stitch Firefighter",
+"tipo":"DISNEY",
+"precio":32.99,
+"fecha_cre":"2022-09-01",
+"myID":31
+},
+{
+"uuid":"cb6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Tokyo Ghoul Kaneki",
+"tipo":"ANIME",
+"precio":27.99,
+"fecha_cre":"2022-10-01",
+"myID":32
+},
+{
+"uuid":"db6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Doctor Strange Magic",
+"tipo":"MARVEL",
+"precio":25.99,
+"fecha_cre":"2023-02-01",
+"myID":33
+},
+{
+"uuid":"eb6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Stitch Astronaut",
+"tipo":"DISNEY",
+"precio":33.99,
+"fecha_cre":"2022-11-01",
+"myID":34
+},
+{
+"uuid":"fb6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Fairy Tail Natsu",
+"tipo":"ANIME",
+"precio":28.99,
+"fecha_cre":"2022-12-01",
+"myID":35
+},
+{
+"uuid":"1b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Black Panther King",
+"tipo":"MARVEL",
+"precio":26.99,
+"fecha_cre":"2023-03-01",
+"myID":36
+},
+{
+"uuid":"2b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Stitch Pirate",
+"tipo":"DISNEY",
+"precio":34.99,
+"fecha_cre":"2023-04-01",
+"myID":37
+},
+{
+"uuid":"3b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"One Piece Zoro",
+"tipo":"ANIME",
+"precio":29.99,
+"fecha_cre":"2023-05-01",
+"myID":38
+},
+{
+"uuid":"4b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Deadpool Swords",
+"tipo":"MARVEL",
+"precio":27.99,
+"fecha_cre":"2023-06-01",
+"myID":39
+},
+{
+"uuid":"5b6c6f58-7c6b-434b-82ab-001b2d6e4434",
+"nombre":"Stitch Cowboy",
+"tipo":"DISNEY",
+"precio":35.99,
+"fecha_cre":"2023-07-01",
+"myID":40
+},
+{
+"uuid":"1c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Iron Man Flight",
+"tipo":"MARVEL",
+"precio":28.99,
+"fecha_cre":"2023-09-01",
+"myID":41
+},
+{
+"uuid":"2c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Stitch Footballer",
+"tipo":"DISNEY",
+"precio":36.99,
+"fecha_cre":"2023-10-01",
+"myID":42
+},
+{
+"uuid":"3c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Naruto Uzumaki",
+"tipo":"ANIME",
+"precio":30.99,
+"fecha_cre":"2022-01-01",
+"myID":43
+},
+{
+"uuid":"4c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Thor Hammer",
+"tipo":"MARVEL",
+"precio":29.99,
+"fecha_cre":"2023-11-01",
+"myID":44
+},
+{
+"uuid":"5c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Stitch Surfer",
+"tipo":"DISNEY",
+"precio":37.99,
+"fecha_cre":"2023-12-01",
+"myID":45
+},
+{
+"uuid":"6c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"One Punch Man Saitama",
+"tipo":"ANIME",
+"precio":31.99,
+"fecha_cre":"2022-02-01",
+"myID":46
+},
+{
+"uuid":"7c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Scarlet Witch Powers",
+"tipo":"MARVEL",
+"precio":30.99,
+"fecha_cre":"2022-03-01",
+"myID":47
+},
+{
+"uuid":"8c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Stitch Basketball",
+"tipo":"DISNEY",
+"precio":38.99,
+"fecha_cre":"2022-04-01",
+"myID":48
+},
+{
+"uuid":"9c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Attack on Titan Eren",
+"tipo":"ANIME",
+"precio":32.99,
+"fecha_cre":"2022-05-01",
+"myID":49
+},
+{
+"uuid":"ac6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Loki Mischief",
+"tipo":"MARVEL",
+"precio":31.99,
+"fecha_cre":"2022-06-01",
+"myID":50
+},
+{
+"uuid":"bc6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Stitch Baseball",
+"tipo":"DISNEY",
+"precio":39.99,
+"fecha_cre":"2022-07-01",
+"myID":51
+},
+{
+"uuid":"cc6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"My Hero Academia Deku",
+"tipo":"ANIME",
+"precio":33.99,
+"fecha_cre":"2022-08-01",
+"myID":52
+},
+{
+"uuid":"dc6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Ant-Man Shrink",
+"tipo":"MARVEL",
+"precio":32.99,
+"fecha_cre":"2022-09-01",
+"myID":53
+},
+{
+"uuid":"ec6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Stitch Skater",
+"tipo":"DISNEY",
+"precio":40.99,
+"fecha_cre":"2022-10-01",
+"myID":54
+},
+{
+"uuid":"fc6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Dragon Ball Goku",
+"tipo":"ANIME",
+"precio":34.99,
+"fecha_cre":"2022-11-01",
+"myID":55
+},
+{
+"uuid":"1c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Vision Synthezoid",
+"tipo":"MARVEL",
+"precio":33.99,
+"fecha_cre":"2022-12-01",
+"myID":56
+},
+{
+"uuid":"2c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Stitch Painter",
+"tipo":"DISNEY",
+"precio":41.99,
+"fecha_cre":"2023-01-01",
+"myID":57
+},
+{
+"uuid":"3c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Hunter x Hunter Gon",
+"tipo":"ANIME",
+"precio":35.99,
+"fecha_cre":"2023-02-01",
+"myID":58
+},
+{
+"uuid":"4c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Black Widow Spies",
+"tipo":"MARVEL",
+"precio":34.99,
+"fecha_cre":"2023-03-01",
+"myID":59
+},
+{
+"uuid":"5c6c6f58-7c6b-434b-82ab-001c2d6e4434",
+"nombre":"Stitch Diver",
+"tipo":"DISNEY",
+"precio":42.99,
+"fecha_cre":"2023-04-01",
+"myID":60
+},
+{
+"uuid":"1d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Thor Thunder",
+"tipo":"MARVEL",
+"precio":32.99,
+"fecha_cre":"2023-11-01",
+"myID":61
+},
+{
+"uuid":"2d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Stitch Space",
+"tipo":"DISNEY",
+"precio":39.99,
+"fecha_cre":"2023-12-01",
+"myID":62
+},
+{
+"uuid":"3d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"One Piece Luffy",
+"tipo":"ANIME",
+"precio":35.99,
+"fecha_cre":"2023-10-01",
+"myID":63
+},
+{
+"uuid":"4d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Captain America Shield",
+"tipo":"MARVEL",
+"precio":33.99,
+"fecha_cre":"2023-11-02",
+"myID":64
+},
+{
+"uuid":"5d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Stitch Surfer",
+"tipo":"DISNEY",
+"precio":42.99,
+"fecha_cre":"2023-12-02",
+"myID":65
+},
+{
+"uuid":"6d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Dragon Ball Goku",
+"tipo":"ANIME",
+"precio":37.99,
+"fecha_cre":"2023-10-02",
+"myID":66
+},
+{
+"uuid":"7d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Hulk Smash",
+"tipo":"MARVEL",
+"precio":34.99,
+"fecha_cre":"2023-11-03",
+"myID":67
+},
+{
+"uuid":"8d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Stitch Pirate",
+"tipo":"DISNEY",
+"precio":45.99,
+"fecha_cre":"2023-12-03",
+"myID":68
+},
+{
+"uuid":"9d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Attack on Titan Eren",
+"tipo":"ANIME",
+"precio":40.99,
+"fecha_cre":"2023-10-03",
+"myID":69
+},
+{
+"uuid":"ad6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Black Widow Spy",
+"tipo":"MARVEL",
+"precio":35.99,
+"fecha_cre":"2023-11-04",
+"myID":70
+},
+{
+"uuid":"bd6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Stitch Cook",
+"tipo":"DISNEY",
+"precio":48.99,
+"fecha_cre":"2023-12-04",
+"myID":71
+},
+{
+"uuid":"cd6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"My Hero Academia Deku",
+"tipo":"ANIME",
+"precio":42.99,
+"fecha_cre":"2023-10-04",
+"myID":72
+},
+{
+"uuid":"dd6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Doctor Strange Mystic",
+"tipo":"MARVEL",
+"precio":36.99,
+"fecha_cre":"2023-11-05",
+"myID":73
+},
+{
+"uuid":"ed6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Stitch Musician",
+"tipo":"DISNEY",
+"precio":51.99,
+"fecha_cre":"2023-12-05",
+"myID":74
+},
+{
+"uuid":"fd6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Tokyo Ghoul Kaneki",
+"tipo":"ANIME",
+"precio":45.99,
+"fecha_cre":"2023-10-05",
+"myID":75
+},
+{
+"uuid":"1d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"The Witcher Geralt",
+"tipo":"OTROS",
+"precio":38.99,
+"fecha_cre":"2023-11-01",
+"myID":76
+},
+{
+"uuid":"2d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"The Mandalorian",
+"tipo":"OTROS",
+"precio":41.99,
+"fecha_cre":"2023-12-01",
+"myID":77
+},
+{
+"uuid":"3d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Harry Potter",
+"tipo":"OTROS",
+"precio":39.99,
+"fecha_cre":"2023-10-01",
+"myID":78
+},
+{
+"uuid":"4d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Stranger Things Eleven",
+"tipo":"OTROS",
+"precio":40.99,
+"fecha_cre":"2023-11-02",
+"myID":79
+},
+{
+"uuid":"5d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Game of Thrones Jon Snow",
+"tipo":"OTROS",
+"precio":43.99,
+"fecha_cre":"2023-12-02",
+"myID":80
+},
+{
+"uuid":"6d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"The Office Michael",
+"tipo":"OTROS",
+"precio":42.99,
+"fecha_cre":"2023-10-02",
+"myID":81
+},
+{
+"uuid":"7d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Friends Ross",
+"tipo":"OTROS",
+"precio":44.99,
+"fecha_cre":"2023-11-03",
+"myID":82
+},
+{
+"uuid":"8d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"The Simpsons Homer",
+"tipo":"OTROS",
+"precio":45.99,
+"fecha_cre":"2023-12-03",
+"myID":83
+},
+{
+"uuid":"9d6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Breaking Bad Walter",
+"tipo":"OTROS",
+"precio":46.99,
+"fecha_cre":"2023-10-03",
+"myID":84
+},
+{
+"uuid":"ad6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Star Trek Spock",
+"tipo":"OTROS",
+"precio":47.99,
+"fecha_cre":"2023-11-04",
+"myID":85
+},
+{
+"uuid":"bd6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Lord of the Rings Frodo",
+"tipo":"OTROS",
+"precio":48.99,
+"fecha_cre":"2023-12-04",
+"myID":86
+},
+{
+"uuid":"cd6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"The Big Bang Theory Sheldon",
+"tipo":"OTROS",
+"precio":49.99,
+"fecha_cre":"2023-10-04",
+"myID":87
+},
+{
+"uuid":"dd6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Sherlock Holmes",
+"tipo":"OTROS",
+"precio":50.99,
+"fecha_cre":"2023-11-05",
+"myID":88
+},
+{
+"uuid":"ed6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Doctor Who Tardis",
+"tipo":"OTROS",
+"precio":51.99,
+"fecha_cre":"2023-12-05",
+"myID":89
+},
+{
+"uuid":"fd6c6f58-7c6b-434b-82ab-001d2d6e4434",
+"nombre":"Peaky Blinders Tommy",
+"tipo":"OTROS",
+"precio":52.99,
+"fecha_cre":"2023-10-05",
+"myID":90
+}
+]
