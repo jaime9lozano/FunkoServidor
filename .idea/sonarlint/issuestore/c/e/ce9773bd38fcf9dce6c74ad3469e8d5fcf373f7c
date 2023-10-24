@@ -1,0 +1,15 @@
+
+l
+java:S2095."JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(íë«Íıÿÿÿÿ8àÒÇ›µ1
+D
+java:S21892""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8àÒÇ›µ1
+L	java:S106"+Replace this use of System.out by a logger.(Çñ€åøÿÿÿÿ8·½šµ1
+L	java:S106 "+Replace this use of System.out by a logger.(…’Œ•øÿÿÿÿ8½öšµ1
+G	java:S106#"+Replace this use of System.out by a logger.(ÉŸî¢8¾§şšµ1
+F	java:S106'"+Replace this use of System.err by a logger.(Ô‰Á8·½šµ1
+L	java:S106("+Replace this use of System.out by a logger.(Óˆ÷Ïûÿÿÿÿ8¾§şšµ1
+G	java:S106+"+Replace this use of System.out by a logger.(Æö¬ú8Ç§şšµ1
+L	java:S106/"+Replace this use of System.out by a logger.(·ûÍéüÿÿÿÿ8Ç§şšµ1
+G	java:S1066"+Replace this use of System.err by a logger.(˜ŸÚá8Ç§şšµ1
+G
+java:S1068"*Remove this unused "logger" private field.(²ù®Ù8¤·½šµ1

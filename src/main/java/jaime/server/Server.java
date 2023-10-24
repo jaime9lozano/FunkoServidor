@@ -13,6 +13,8 @@ import java.net.ServerSocket;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Server {
+    public static final String TOKEN_SECRET = "DAW2023";
+    public static final long TOKEN_EXPIRATION = 10000;
     private static final AtomicLong clientNumber = new AtomicLong(0);
     private final Logger logger = LoggerFactory.getLogger(Server.class);
 

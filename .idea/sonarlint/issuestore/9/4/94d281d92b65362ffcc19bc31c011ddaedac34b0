@@ -1,0 +1,27 @@
+
+m
+java:S1192."RDefine a constant instead of duplicating this literal "fecha_lanzamiento" 5 times.(Åß”Éşÿÿÿÿ
+b
+java:S1192+"GDefine a constant instead of duplicating this literal "nombre" 5 times.(ªçÊºÿÿÿÿÿ
+]
+java:S1192-"GDefine a constant instead of duplicating this literal "precio" 5 times.(ïù÷
+]
+java:S1192,"GDefine a constant instead of duplicating this literal "modelo" 6 times.(Ì»ûú
+M
+java:S26298"7Use the built-in formatting to construct this argument.(øë”
+M
+java:S2629O"7Use the built-in formatting to construct this argument.(÷èºÀ
+L
+java:S2629e"7Use the built-in formatting to construct this argument.(üÈ±I
+M
+java:S2629x"7Use the built-in formatting to construct this argument.(ğ¾¾Ÿ
+6
+java:S1640Ù"Convert this Map to an EnumMap.(–ÛĞì
+W
+java:S34578"AFormat specifiers should be used instead of string concatenation.(øë”
+W
+java:S3457O"AFormat specifiers should be used instead of string concatenation.(÷èºÀ
+V
+java:S3457e"AFormat specifiers should be used instead of string concatenation.(üÈ±I
+W
+java:S3457x"AFormat specifiers should be used instead of string concatenation.(ğ¾¾Ÿ

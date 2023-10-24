@@ -1,0 +1,17 @@
+
+M
+java:S2629""7Use the built-in formatting to construct this argument.(şÓ£Ë
+R
+java:S2629("7Use the built-in formatting to construct this argument.(ˆ×ƒøÿÿÿÿ
+R
+java:S2629."7Use the built-in formatting to construct this argument.(æõ¶Åıÿÿÿÿ
+W
+java:S3457""AFormat specifiers should be used instead of string concatenation.(şÓ£Ë
+\
+java:S3457("AFormat specifiers should be used instead of string concatenation.(ˆ×ƒøÿÿÿÿ
+\
+java:S3457."AFormat specifiers should be used instead of string concatenation.(æõ¶Åıÿÿÿÿ
+W
+java:S34577"AFormat specifiers should be used instead of string concatenation.(ıÌâÕ
+A
+java:S1068"+Remove this unused "maxSize" private field.(şØ‘

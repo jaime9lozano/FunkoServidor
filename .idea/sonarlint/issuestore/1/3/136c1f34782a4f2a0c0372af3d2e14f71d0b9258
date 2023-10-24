@@ -1,0 +1,23 @@
+
+R
+java:S2629="7Use the built-in formatting to construct this argument.(Éá—àşÿÿÿÿ
+M
+java:S2629K"7Use the built-in formatting to construct this argument.(¶›Ô©
+^
+java:S20957"HUse try-with-resources or close this "FileReader" in a "finally" clause.(¼“ğş
+t
+java:S1450"_Remove the "databasePassword" field and declare it as a local variable in the relevant methods.(×¢Ñ
+u
+java:S1450"_Remove the "databaseUsername" field and declare it as a local variable in the relevant methods.(ÿÙá
+´
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.( ùÓ‹ÿÿÿÿÿ
+\
+java:S3457="AFormat specifiers should be used instead of string concatenation.(Éá—àşÿÿÿÿ
+\
+java:S3457?"AFormat specifiers should be used instead of string concatenation.(ÇßÛ®ıÿÿÿÿ
+W
+java:S3457K"AFormat specifiers should be used instead of string concatenation.(¶›Ô©
+J
+java:S1068"4Remove this unused "databaseUsername" private field.(ÿÙá
+I
+java:S1068"4Remove this unused "databasePassword" private field.(×¢Ñ

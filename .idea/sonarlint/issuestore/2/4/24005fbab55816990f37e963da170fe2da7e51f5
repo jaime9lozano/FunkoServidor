@@ -1,0 +1,12 @@
+
+`	java:S112c"FDefine and throw a dedicated exception instead of using a generic one.(¦¶»Êûÿÿÿÿ
+`	java:S112o"FDefine and throw a dedicated exception instead of using a generic one.(¦¶»Êûÿÿÿÿ
+`	java:S112t"FDefine and throw a dedicated exception instead of using a generic one.(¦¶»Êûÿÿÿÿ
+…
+java:S1192c"jDefine a constant instead of duplicating this literal "Error al escribir el JSON en el archivo: " 3 times.(¦¶»Êûÿÿÿÿ
+w
+java:S1488O"\Immediately return this expression instead of assigning it to the temporary variable "json".(¡—øºøÿÿÿÿ
+¯
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(˜·öÒ
+I
+java:S1144B".Remove this unused private "crearJson" method.(¶¼õÂÿÿÿÿÿ
