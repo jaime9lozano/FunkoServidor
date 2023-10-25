@@ -1,0 +1,23 @@
+
+o
+java:S1192."RDefine a constant instead of duplicating this literal "Verificando token" 3 times.(ç Ñÿ8Ğåº¶1
+n
+java:S11924"QDefine a constant instead of duplicating this literal "Token verificado" 3 times.(¸ÓÊ8Ğåº¶1
+{
+java:S1192<"^Define a constant instead of duplicating this literal "Error al verificar el token: " 3 times.(äÍÙŒ8Ğåº¶1
+u
+java:S3008"SRename this field "INSTANCE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³Ä²şÿÿÿÿ8Ùåº¶1
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(µŸ÷üùÿÿÿÿ8Şåº¶1
+^
+java:S3457<"AFormat specifiers should be used instead of string concatenation.(äÍÙŒ8ååº¶1
+`
+java:S1854G">Remove this useless assignment to local variable "decodedJWT".(›ÑÒ‚ıÿÿÿÿ8æåº¶1
+Q
+java:S1481G"/Remove this unused "decodedJWT" local variable.(›ÑÒ‚ıÿÿÿÿ8çåº¶1
+^
+java:S3457K"AFormat specifiers should be used instead of string concatenation.(äÍÙŒ8çåº¶1
+^
+java:S3457Z"AFormat specifiers should be used instead of string concatenation.(äÍÙŒ8éåº¶1
+A
+java:S1168["$Return an empty map instead of null.(¥¹ï8êåº¶1

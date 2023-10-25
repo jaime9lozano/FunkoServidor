@@ -27,10 +27,8 @@ import java.net.Socket;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-import static jaime.modelos.Request.Type.LOGIN;
 
-
-public class ClientHandler {
+public class ClientHandler extends Thread{
     private final Logger logger = LoggerFactory.getLogger(ClientHandler.class);
     private final Socket clientSocket;
     Gson gson = new GsonBuilder()
@@ -53,17 +51,21 @@ public class ClientHandler {
             openConnection();
 
             String clientInput;
-            Request<String> request;
+            Request request;
 
             // Cuidado con lo de salir!!!!
             while (true) {
                 clientInput = in.readLine();
+                logger.debug("Petición recibida en bruto: " + clientInput);
                 request = gson.fromJson(clientInput, Request.class);
                 handleRequest(request);
             }
 
         } catch (IOException e) {
             logger.error("Error: " + e.getMessage());
+        }catch (ServerException ex) {
+            // Concentramos todos los errores aquí
+            out.println(gson.toJson(new Response<>(Response.Status.ERROR, ex.getMessage(), LocalDateTime.now().toString())));
         }
     }
 
@@ -80,7 +82,7 @@ public class ClientHandler {
         out = new PrintWriter(clientSocket.getOutputStream(), true);
     }
     @SuppressWarnings("unchecked")
-    private void handleRequest(Request<?> request) throws IOException {
+    private void handleRequest(Request<?> request) throws IOException, ServerException {
         // Procesamos la petición y devolvemos la respuesta, esto puede ser un método
         switch (request.type()) {
             case LOGIN -> processLogin((Request<Login>) request);
@@ -92,7 +94,7 @@ public class ClientHandler {
                     out.println(gson.toJson(new Response<>(Response.Status.ERROR, "No tengo ni idea", LocalDateTime.now().toString())));
         }
     }
-    private void processFunkosStitch(Request<String> request) {
+    private void processFunkosStitch(Request<String> request) throws ServerException {
         logger.debug("Petición de funkos de stitch recibida: " + request);
         // Para el UUID solo vamos a comporbar que el token esté activo
         // y que el usuario sea admin
@@ -112,12 +114,12 @@ public class ClientHandler {
                         });
             } else {
                 logger.warn("Usuario no válido");
-                out.println(gson.toJson(new Response<>(Response.Status.ERROR, "Usuario no válido o no tiene permisos", LocalDateTime.now().toString())));
+                throw new ServerException("Usuario no autorizado para esta acción");
             }
 
         } else {
             logger.warn("Token no válido");
-            out.println(gson.toJson(new Response<>(Response.Status.ERROR, "Token no válido o caducado", LocalDateTime.now().toString())));
+            throw new ServerException("Token no válido");
         }
     }
     private void processSalir() throws IOException {
@@ -125,7 +127,7 @@ public class ClientHandler {
         closeConnection();
     }
 
-    private void processFunkos2023(Request<String> request){
+    private void processFunkos2023(Request<String> request) throws ServerException {
         logger.debug("Petición de funkos en 2023 recibida: " + request);
         // Para el UUID solo vamos a comporbar que el token esté activo
         // y que el usuario sea admin
@@ -145,15 +147,15 @@ public class ClientHandler {
                         });
             } else {
                 logger.warn("Usuario no válido");
-                out.println(gson.toJson(new Response<>(Response.Status.ERROR, "Usuario no válido o no tiene permisos", LocalDateTime.now().toString())));
+                throw new ServerException("Usuario no autorizado para esta acción");
             }
 
         } else {
             logger.warn("Token no válido");
-            out.println(gson.toJson(new Response<>(Response.Status.ERROR, "Token no válido o caducado", LocalDateTime.now().toString())));
+            throw new ServerException("Token no válido");
         }
     }
-    private void processFunkoCaro(Request<String> request){
+    private void processFunkoCaro(Request<String> request) throws ServerException {
         logger.debug("Petición de funko mas caro recibida: " + request);
         // Para la fecha solo vamos a comporbar que el token esté activo
         // Si no lo está, no se procesa la petición
@@ -168,32 +170,26 @@ public class ClientHandler {
                     });
         } else {
             logger.warn("Token no válido");
-            out.println(gson.toJson(new Response<>(Response.Status.ERROR, "Token no válido o caducado", LocalDateTime.now().toString())));
+            throw new ServerException("Token no valido o caducado");
         }
     }
-    private void processLogin(Request<Login> request) {
+    private void processLogin(Request<Login> request) throws ServerException {
         logger.debug("Petición de login recibida: " + request);
         // Aquí procesamos el login es un dato anidado!!! Descomponemos la petición
         Login login = gson.fromJson(String.valueOf(request.content()), new TypeToken<Login>() {
         }.getType());
         // existe el usuario??
+        // System.out.println(login);
         var user = UsersRepository.getInstance().findByByUsername(login.username());
-        if (user.isPresent()) {
-            var canLogin = BCrypt.checkpw(login.password(), user.get().password());
-            if (canLogin) {
-                // Creamos el token
-                var token = TokenService.getInstance().createToken(user.get(), Server.TOKEN_SECRET, Server.TOKEN_EXPIRATION);
-                // Enviamos la respuesta
-                logger.debug("Respuesta enviada: " + token);
-                out.println(gson.toJson(new Response<>(Response.Status.TOKEN, token, LocalDateTime.now().toString())));
-            } else {
-                logger.warn("Usuario o contraseña incorrectos");
-                out.println(gson.toJson(new Response<>(Response.Status.ERROR, "Usuario o contraseña incorrectos", LocalDateTime.now().toString())));
-            }
-        } else {
-            logger.warn("Usuario no encontrado");
-            out.println(gson.toJson(new Response<>(Response.Status.ERROR, "Usuario no encontrado", LocalDateTime.now().toString())));
+        if (user.isEmpty() || !BCrypt.checkpw(login.password(), user.get().password())) {
+            logger.warn("Usuario no encontrado o falla la contraseña");
+            throw new ServerException("Usuario o contraseña incorrectos");
         }
+        // Creamos el token
+        var token = TokenService.getInstance().createToken(user.get(), Server.TOKEN_SECRET, Server.TOKEN_EXPIRATION);
+        // Enviamos la respuesta
+        logger.debug("Respuesta enviada: " + token);
+        out.println(gson.toJson(new Response<>(Response.Status.TOKEN, token, LocalDateTime.now().toString())));
 
     }
 }

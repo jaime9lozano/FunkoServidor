@@ -1,15 +1,25 @@
 
-l
-java:S2095."JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(íë«Íıÿÿÿÿ8àÒÇ›µ1
-D
-java:S21892""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8àÒÇ›µ1
-L	java:S106"+Replace this use of System.out by a logger.(Çñ€åøÿÿÿÿ8·½šµ1
-L	java:S106 "+Replace this use of System.out by a logger.(…’Œ•øÿÿÿÿ8½öšµ1
-G	java:S106#"+Replace this use of System.out by a logger.(ÉŸî¢8¾§şšµ1
-F	java:S106'"+Replace this use of System.err by a logger.(Ô‰Á8·½šµ1
-L	java:S106("+Replace this use of System.out by a logger.(Óˆ÷Ïûÿÿÿÿ8¾§şšµ1
-G	java:S106+"+Replace this use of System.out by a logger.(Æö¬ú8Ç§şšµ1
-L	java:S106/"+Replace this use of System.out by a logger.(·ûÍéüÿÿÿÿ8Ç§şšµ1
-G	java:S1066"+Replace this use of System.err by a logger.(˜ŸÚá8Ç§şšµ1
-G
-java:S1068"*Remove this unused "logger" private field.(²ù®Ù8¤·½šµ1
+e
+java:S1192:"HDefine a constant instead of duplicating this literal "keyFile" 3 times.(æ¡8Àá¹’¶1
+n
+java:S1192;"LDefine a constant instead of duplicating this literal "keyPassword" 3 times.(ëÉé‚üÿÿÿÿ8Àá¹’¶1
+y
+java:S2629?"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(µ‡¦8´Ù¾’¶1
+L	java:S106("+Replace this use of System.out by a logger.(Çñ€åøÿÿÿÿ8·½šµ1
+L	java:S106+"+Replace this use of System.out by a logger.(…’Œ•øÿÿÿÿ8½öšµ1
+G	java:S106."+Replace this use of System.out by a logger.(ÉŸî¢8¾§şšµ1
+F	java:S1062"+Replace this use of System.err by a logger.(Ô‰Á8·½šµ1
+L	java:S1063"+Replace this use of System.out by a logger.(Óˆ÷Ïûÿÿÿÿ8¾§şšµ1
+G	java:S1066"+Replace this use of System.out by a logger.(Æö¬ú8Ç§şšµ1
+^
+java:S3457?"AFormat specifiers should be used instead of string concatenation.(µ‡¦8ÂÙ¾’¶1
+L	java:S106D"+Replace this use of System.out by a logger.(ŸäîÓùÿÿÿÿ8ÃÀ¾’¶1
+G	java:S106K"+Replace this use of System.err by a logger.(˜ŸÚá8Ç§şšµ1
+c
+java:S3457k"AFormat specifiers should be used instead of string concatenation.(ëú•Áüÿÿÿÿ8‹Ÿ°’¶1
+F
+java:S1168m"$Return an empty map instead of null.(èš‚¤ùÿÿÿÿ8¨¬’¶1
+^
+java:S3457o"AFormat specifiers should be used instead of string concatenation.(é·æı8ã‡®’¶1
+A
+java:S1168p"$Return an empty map instead of null.(¥¹ï8¨¬’¶1
