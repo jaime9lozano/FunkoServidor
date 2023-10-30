@@ -5,6 +5,12 @@ n
 java:S1192;"LDefine a constant instead of duplicating this literal "keyPassword" 3 times.(ëÉé‚üÿÿÿÿ8Àá¹’¶1
 y
 java:S2629?"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(µ‡¦8´Ù¾’¶1
+c
+java:S2259:"FA "NullPointerException" could be thrown; "myConfig" is nullable here.(æ¡8»§–³¶1
+l
+java:S2095>"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(¿Ò‹ôùÿÿÿÿ8»§–³¶1
+D
+java:S2189G""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8¼§–³¶1
 L	java:S106("+Replace this use of System.out by a logger.(Çñ€åøÿÿÿÿ8·½šµ1
 L	java:S106+"+Replace this use of System.out by a logger.(…’Œ•øÿÿÿÿ8½öšµ1
 G	java:S106."+Replace this use of System.out by a logger.(ÉŸî¢8¾§şšµ1
@@ -14,6 +20,8 @@ G	java:S1066"+Replace this use of System.out by a logger.(Æö¬ú8Ç§şšµ1
 ^
 java:S3457?"AFormat specifiers should be used instead of string concatenation.(µ‡¦8ÂÙ¾’¶1
 L	java:S106D"+Replace this use of System.out by a logger.(ŸäîÓùÿÿÿÿ8ÃÀ¾’¶1
+|
+java:S1217H"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(È¹«c8Æ§–³¶1
 G	java:S106K"+Replace this use of System.err by a logger.(˜ŸÚá8Ç§şšµ1
 c
 java:S3457k"AFormat specifiers should be used instead of string concatenation.(ëú•Áüÿÿÿÿ8‹Ÿ°’¶1
