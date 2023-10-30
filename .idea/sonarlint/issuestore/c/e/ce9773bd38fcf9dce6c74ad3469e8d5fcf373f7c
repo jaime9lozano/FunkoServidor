@@ -1,8 +1,8 @@
 
-n
-java:S1192;"LDefine a constant instead of duplicating this literal "keyPassword" 3 times.(ëÉé‚üÿÿÿÿ8Àá¹’¶1
 e
 java:S1192:"HDefine a constant instead of duplicating this literal "keyFile" 3 times.(æ¡8Àá¹’¶1
+n
+java:S1192;"LDefine a constant instead of duplicating this literal "keyPassword" 3 times.(ëÉé‚üÿÿÿÿ8Àá¹’¶1
 y
 java:S2629?"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(µ‡¦8´Ù¾’¶1
 c

@@ -1,125 +1,185 @@
 
 r
-java:S1192œ"TDefine a constant instead of duplicating this literal "PeticiÃ³n enviada: " 5 times.(ö®Âª8»ïú’¶1
-{
-java:S1192¦"]Define a constant instead of duplicating this literal "Respuesta recibida de tipo: " 5 times.(“ĞÊ®8¼ïú’¶1
-i
-java:S1192P"LDefine a constant instead of duplicating this literal "keyPassword" 3 times.(¢àíÃ8¼ïú’¶1
+java:S1192¤"TDefine a constant instead of duplicating this literal "PeticiÃ³n enviada: " 9 times.(ö®Âª8õ¦¶î·1
 
-java:S1192›"\Define a constant instead of duplicating this literal "PeticiÃ³n enviada de tipo: " 5 times.(Î¶êËÿÿÿÿÿ8¼ïú’¶1
-e
-java:S1192:"HDefine a constant instead of duplicating this literal "Error: " 6 times.(€ï®«8¼ïú’¶1
-j
-java:S1192O"HDefine a constant instead of duplicating this literal "keyFile" 3 times.(¸¦É¡üÿÿÿÿ8¼ïú’¶1
-~
-java:S1192­"`Define a constant instead of duplicating this literal "Tipo de respuesta no esperado: " 4 times.(µµÜ½8¼ïú’¶1
-x
-java:S1192£"UDefine a constant instead of duplicating this literal "Respuesta recibida: " 5 times.(ÅæÌÿÿÿÿÿ8¼ïú’¶1
-i
-java:S1301¨"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8½ïú’¶1
-i
-java:S1301Ç"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8½ïú’¶1
-i
-java:S1301â"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8½ïú’¶1
-i
-java:S1301ı"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8½ïú’¶1
-~
-java:S2629V"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(°™¡¥ùÿÿÿÿ8¾ïú’¶1
-U
-java:S2629œ"7Use the built-in formatting to construct this argument.(ö®Âª8¾ïú’¶1
-
-java:S2629£"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8¾ïú’¶1
-U
-java:S2629¹"7Use the built-in formatting to construct this argument.(ö®Âª8¾ïú’¶1
-
-java:S2629Â"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8¾ïú’¶1
-U
-java:S2629Ô"7Use the built-in formatting to construct this argument.(ö®Âª8¾ïú’¶1
-
-java:S2629İ"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8¾ïú’¶1
-U
-java:S2629ï"7Use the built-in formatting to construct this argument.(ö®Âª8¾ïú’¶1
-
-java:S2629ø"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8¿ïú’¶1
-U
-java:S2629‰"7Use the built-in formatting to construct this argument.(ö®Âª8¿ïú’¶1
-
-java:S2629’"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8¿ïú’¶1
+java:S1192£"\Define a constant instead of duplicating this literal "PeticiÃ³n enviada de tipo: " 9 times.(Î¶êËÿÿÿÿÿ8ö¦¶î·1
 f
-java:S2095S"DUse try-with-resources or close this "Socket" in a "finally" clause.(ı¹ÓØúÿÿÿÿ8Òïú’¶1
+java:S1192B"IDefine a constant instead of duplicating this literal "Error: " 10 times.(€ï®«8ö¦¶î·1
+j
+java:S1192W"HDefine a constant instead of duplicating this literal "keyFile" 3 times.(¸¦É¡üÿÿÿÿ8ö¦¶î·1
+~
+java:S1192µ"`Define a constant instead of duplicating this literal "Tipo de respuesta no esperado: " 8 times.(µµÜ½8ö¦¶î·1
+x
+java:S1192«"UDefine a constant instead of duplicating this literal "Respuesta recibida: " 9 times.(ÅæÌÿÿÿÿÿ8ö¦¶î·1
+{
+java:S1192®"]Define a constant instead of duplicating this literal "Respuesta recibida de tipo: " 9 times.(“ĞÊ®8ö¦¶î·1
+i
+java:S1192X"LDefine a constant instead of duplicating this literal "keyPassword" 3 times.(¢àíÃ8ö¦¶î·1
+i
+java:S1301°"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8÷¦¶î·1
+i
+java:S1301Í"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8÷¦¶î·1
+i
+java:S1301è"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8÷¦¶î·1
+i
+java:S1301ƒ"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8÷¦¶î·1
+i
+java:S1301¼"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8÷¦¶î·1
+i
+java:S1301Ù"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8ÿûäî·1
+i
+java:S1301ö"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8Äßîî·1
+i
+java:S1301‘"KReplace this "switch" statement by "if" statements to increase readability.(Ó ­8¬µúî·1
+~
+java:S2629^"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(°™¡¥ùÿÿÿÿ8ø¦¶î·1
+U
+java:S2629¤"7Use the built-in formatting to construct this argument.(ö®Âª8ø¦¶î·1
+
+java:S2629«"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8ø¦¶î·1
+U
+java:S2629¿"7Use the built-in formatting to construct this argument.(ö®Âª8ø¦¶î·1
+
+java:S2629È"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8ø¦¶î·1
+U
+java:S2629Ú"7Use the built-in formatting to construct this argument.(ö®Âª8ø¦¶î·1
+
+java:S2629ã"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8ø¦¶î·1
+U
+java:S2629õ"7Use the built-in formatting to construct this argument.(ö®Âª8ø¦¶î·1
+
+java:S2629ş"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8ø¦¶î·1
+U
+java:S2629"7Use the built-in formatting to construct this argument.(ö®Âª8ø¦¶î·1
+
+java:S2629˜"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8ø¦¶î·1
+U
+java:S2629®"7Use the built-in formatting to construct this argument.(ö®Âª8ø¦¶î·1
+
+java:S2629·"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8ø¦¶î·1
+U
+java:S2629Ë"7Use the built-in formatting to construct this argument.(ö®Âª8¸ÿáî·1
+
+java:S2629Ô"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8¸ÿáî·1
+U
+java:S2629è"7Use the built-in formatting to construct this argument.(ö®Âª8ÿûäî·1
+
+java:S2629ñ"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8ÿûäî·1
+U
+java:S2629ƒ"7Use the built-in formatting to construct this argument.(ö®Âª8­µúî·1
+
+java:S2629Œ"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÅæÌÿÿÿÿÿ8®µúî·1
+f
+java:S2095["DUse try-with-resources or close this "Socket" in a "finally" clause.(ı¹ÓØúÿÿÿÿ8—§¶î·1
 ^
-java:S3457:"AFormat specifiers should be used instead of string concatenation.(€ï®«8Ùïú’¶1
-L	java:S106@"+Replace this use of System.out by a logger.(æüşÊùÿÿÿÿ8Úïú’¶1
-G	java:S106J"+Replace this use of System.out by a logger.(ïé®•8Úïú’¶1
+java:S3457B"AFormat specifiers should be used instead of string concatenation.(€ï®«8§¶î·1
+L	java:S106H"+Replace this use of System.out by a logger.(æüşÊùÿÿÿÿ8§¶î·1
+G	java:S106R"+Replace this use of System.out by a logger.(ïé®•8Ÿ§¶î·1
 \
-java:S1117S":Rename "socket" which hides the field declared at line 33.(ı¹ÓØúÿÿÿÿ8Ûïú’¶1
+java:S1117[":Rename "socket" which hides the field declared at line 36.(ı¹ÓØúÿÿÿÿ8Ÿ§¶î·1
 c
-java:S3457V"AFormat specifiers should be used instead of string concatenation.(°™¡¥ùÿÿÿÿ8Ûïú’¶1
-L	java:S106^"+Replace this use of System.out by a logger.(İ†¹ïÿÿÿÿÿ8İïú’¶1
-c
-java:S3457{"AFormat specifiers should be used instead of string concatenation.(ëú•Áüÿÿÿÿ8àïú’¶1
-F
-java:S1168}"$Return an empty map instead of null.(èš‚¤ùÿÿÿÿ8àïú’¶1
-^
-java:S3457"AFormat specifiers should be used instead of string concatenation.(»è±‚8àïú’¶1
+java:S3457^"AFormat specifiers should be used instead of string concatenation.(°™¡¥ùÿÿÿÿ8Ÿ§¶î·1
+L	java:S106f"+Replace this use of System.out by a logger.(İ†¹ïÿÿÿÿÿ8¡§¶î·1
+d
+java:S3457ƒ"AFormat specifiers should be used instead of string concatenation.(ëú•Áüÿÿÿÿ8£§¶î·1
+G
+java:S1168…"$Return an empty map instead of null.(èš‚¤ùÿÿÿÿ8¤§¶î·1
+_
+java:S3457‡"AFormat specifiers should be used instead of string concatenation.(»è±‚8¤§¶î·1
 B
-java:S1168€"$Return an empty map instead of null.(¥¹ï8àïú’¶1
-H	java:S106…"+Replace this use of System.out by a logger.(•äÍ°8áïú’¶1
-M	java:S106ˆ"+Replace this use of System.out by a logger.(ë“Î´úÿÿÿÿ8áïú’¶1
-H	java:S106‰"+Replace this use of System.out by a logger.(½Ğ“¤8áïú’¶1
-M	java:S106Š"+Replace this use of System.out by a logger.(ÖÔ©ıÿÿÿÿ8âïú’¶1
-H	java:S106‹"+Replace this use of System.out by a logger.(¤ÿÀš8âïú’¶1
-M	java:S106Œ"+Replace this use of System.out by a logger.(²©€ôşÿÿÿÿ8âïú’¶1
-H	java:S106"+Replace this use of System.out by a logger.(ı¨êÙ8ãïú’¶1
-M	java:S106"+Replace this use of System.out by a logger.(¬…ºƒùÿÿÿÿ8ãïú’¶1
-M	java:S106"+Replace this use of System.out by a logger.(ï°ˆúıÿÿÿÿ8ãïú’¶1
-G	java:S106‘"+Replace this use of System.out by a logger.(é­Øe8ãïú’¶1
-M	java:S106“"+Replace this use of System.out by a logger.(ÄÜ¦üÿÿÿÿ8ãïú’¶1
+java:S1168ˆ"$Return an empty map instead of null.(¥¹ï8¤§¶î·1
+H	java:S106"+Replace this use of System.out by a logger.(•äÍ°8¤§¶î·1
+M	java:S106"+Replace this use of System.out by a logger.(ë“Î´úÿÿÿÿ8¥§¶î·1
+H	java:S106‘"+Replace this use of System.out by a logger.(½Ğ“¤8¥§¶î·1
+M	java:S106’"+Replace this use of System.out by a logger.(ÖÔ©ıÿÿÿÿ8¥§¶î·1
+H	java:S106“"+Replace this use of System.out by a logger.(¤ÿÀš8¥§¶î·1
+M	java:S106”"+Replace this use of System.out by a logger.(²©€ôşÿÿÿÿ8¥§¶î·1
+H	java:S106–"+Replace this use of System.out by a logger.(ı¨êÙ8¦§¶î·1
+M	java:S106—"+Replace this use of System.out by a logger.(¬…ºƒùÿÿÿÿ8¦§¶î·1
+M	java:S106˜"+Replace this use of System.out by a logger.(ï°ˆúıÿÿÿÿ8¦§¶î·1
+G	java:S106™"+Replace this use of System.out by a logger.(é­Øe8¦§¶î·1
+M	java:S106›"+Replace this use of System.out by a logger.(ÄÜ¦üÿÿÿÿ8¦§¶î·1
 d
-java:S3457•"AFormat specifiers should be used instead of string concatenation.(ì¨„Íøÿÿÿÿ8ãïú’¶1
-M	java:S106›"+Replace this use of System.out by a logger.(Î¶êËÿÿÿÿÿ8åïú’¶1
+java:S3457"AFormat specifiers should be used instead of string concatenation.(ì¨„Íøÿÿÿÿ8¦§¶î·1
+M	java:S106£"+Replace this use of System.out by a logger.(Î¶êËÿÿÿÿÿ8§§¶î·1
 _
-java:S3457œ"AFormat specifiers should be used instead of string concatenation.(ö®Âª8åïú’¶1
+java:S3457¤"AFormat specifiers should be used instead of string concatenation.(ö®Âª8§§¶î·1
 d
-java:S3457£"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8æïú’¶1
-H	java:S106¦"+Replace this use of System.out by a logger.(“ĞÊ®8æïú’¶1
-M	java:S106ª"+Replace this use of System.out by a logger.(‹‰ÆÁûÿÿÿÿ8æïú’¶1
+java:S3457«"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8¨§¶î·1
+H	java:S106®"+Replace this use of System.out by a logger.(“ĞÊ®8¨§¶î·1
+M	java:S106²"+Replace this use of System.out by a logger.(‹‰ÆÁûÿÿÿÿ8¨§¶î·1
 _
-java:S3457°"AFormat specifiers should be used instead of string concatenation.(€ï®«8ÎŠ³¶1
-M	java:S106¸"+Replace this use of System.out by a logger.(¦ğ¾Êüÿÿÿÿ8èïú’¶1
+java:S3457¸"AFormat specifiers should be used instead of string concatenation.(€ï®«8¨§¶î·1
+M	java:S106¾"+Replace this use of System.out by a logger.(¦ğ¾Êüÿÿÿÿ8©§¶î·1
 _
-java:S3457¹"AFormat specifiers should be used instead of string concatenation.(ö®Âª8èïú’¶1
+java:S3457¿"AFormat specifiers should be used instead of string concatenation.(ö®Âª8©§¶î·1
 d
-java:S3457Â"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8éïú’¶1
-H	java:S106Å"+Replace this use of System.out by a logger.(“ĞÊ®8éïú’¶1
-M	java:S106È"+Replace this use of System.out by a logger.(ú¿•ûÿÿÿÿ8éïú’¶1
+java:S3457È"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8ª§¶î·1
+H	java:S106Ë"+Replace this use of System.out by a logger.(“ĞÊ®8ª§¶î·1
+M	java:S106Î"+Replace this use of System.out by a logger.(ú¿•ûÿÿÿÿ8ª§¶î·1
 _
-java:S3457Ì"AFormat specifiers should be used instead of string concatenation.(€ï®«8ÓŠ³¶1
-M	java:S106Ó"+Replace this use of System.out by a logger.(®©ÜÓüÿÿÿÿ8êïú’¶1
+java:S3457Ò"AFormat specifiers should be used instead of string concatenation.(€ï®«8«§¶î·1
+M	java:S106Ù"+Replace this use of System.out by a logger.(®©ÜÓüÿÿÿÿ8«§¶î·1
 _
-java:S3457Ô"AFormat specifiers should be used instead of string concatenation.(ö®Âª8êïú’¶1
+java:S3457Ú"AFormat specifiers should be used instead of string concatenation.(ö®Âª8«§¶î·1
 d
-java:S3457İ"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8êïú’¶1
-H	java:S106à"+Replace this use of System.out by a logger.(“ĞÊ®8êïú’¶1
-M	java:S106ã"+Replace this use of System.out by a logger.(€Ú¢Ùøÿÿÿÿ8ìïú’¶1
+java:S3457ã"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8¬§¶î·1
+H	java:S106æ"+Replace this use of System.out by a logger.(“ĞÊ®8¬§¶î·1
+M	java:S106é"+Replace this use of System.out by a logger.(€Ú¢Ùøÿÿÿÿ8¬§¶î·1
 _
-java:S3457ç"AFormat specifiers should be used instead of string concatenation.(€ï®«8×Š³¶1
-M	java:S106î"+Replace this use of System.out by a logger.(ú‰™’ûÿÿÿÿ8íïú’¶1
+java:S3457í"AFormat specifiers should be used instead of string concatenation.(€ï®«8¬§¶î·1
+M	java:S106ô"+Replace this use of System.out by a logger.(ú‰™’ûÿÿÿÿ8­§¶î·1
 _
-java:S3457ï"AFormat specifiers should be used instead of string concatenation.(ö®Âª8íïú’¶1
+java:S3457õ"AFormat specifiers should be used instead of string concatenation.(ö®Âª8­§¶î·1
 d
-java:S3457ø"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8íïú’¶1
-H	java:S106û"+Replace this use of System.out by a logger.(“ĞÊ®8îïú’¶1
-H	java:S106ş"+Replace this use of System.out by a logger.(¹‰úÒ8îïú’¶1
+java:S3457ş"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8­§¶î·1
+H	java:S106"+Replace this use of System.out by a logger.(“ĞÊ®8®§¶î·1
+H	java:S106„"+Replace this use of System.out by a logger.(¹‰úÒ8®§¶î·1
 _
-java:S3457‚"AFormat specifiers should be used instead of string concatenation.(€ï®«8ÛŠ³¶1
-H	java:S106ˆ"+Replace this use of System.out by a logger.(åÀ¸ú8ïïú’¶1
+java:S3457ˆ"AFormat specifiers should be used instead of string concatenation.(€ï®«8®§¶î·1
+H	java:S106"+Replace this use of System.out by a logger.(åÀ¸ú8¯§¶î·1
 _
-java:S3457‰"AFormat specifiers should be used instead of string concatenation.(ö®Âª8ïïú’¶1
+java:S3457"AFormat specifiers should be used instead of string concatenation.(ö®Âª8¯§¶î·1
 d
-java:S3457’"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8ğïú’¶1
-H	java:S106•"+Replace this use of System.out by a logger.(“ĞÊ®8ğïú’¶1
-H	java:S106˜"+Replace this use of System.err by a logger.(µ·şâ8ñïú’¶1
-H	java:S106š"+Replace this use of System.out by a logger.(ñÿÔ¬8ñïú’¶1
+java:S3457˜"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8¯§¶î·1
+H	java:S106›"+Replace this use of System.out by a logger.(“ĞÊ®8¯§¶î·1
+H	java:S106"+Replace this use of System.err by a logger.(µ·şâ8°§¶î·1
+H	java:S106 "+Replace this use of System.out by a logger.(ñÿÔ¬8°§¶î·1
 _
-java:S3457 "AFormat specifiers should be used instead of string concatenation.(€ï®«8ŞŠ³¶1
+java:S3457¦"AFormat specifiers should be used instead of string concatenation.(€ï®«8°§¶î·1
+M	java:S106­"+Replace this use of System.out by a logger.(¼üÊ¾şÿÿÿÿ8±§¶î·1
+_
+java:S3457®"AFormat specifiers should be used instead of string concatenation.(ö®Âª8±§¶î·1
+d
+java:S3457·"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8±§¶î·1
+H	java:S106º"+Replace this use of System.out by a logger.(“ĞÊ®8±§¶î·1
+H	java:S106½"+Replace this use of System.out by a logger.(ı•’8²§¶î·1
+_
+java:S3457Á"AFormat specifiers should be used instead of string concatenation.(€ï®«8²§¶î·1
+M	java:S106Ê"+Replace this use of System.out by a logger.(Ñ›¯×üÿÿÿÿ8ıÿáî·1
+_
+java:S3457Ë"AFormat specifiers should be used instead of string concatenation.(ö®Âª8üÿáî·1
+d
+java:S3457Ô"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8ıÿáî·1
+H	java:S106×"+Replace this use of System.out by a logger.(“ĞÊ®8ıÿáî·1
+M	java:S106Ú"+Replace this use of System.out by a logger.(›™Ü®ıÿÿÿÿ8Üüäî·1
+_
+java:S3457Ş"AFormat specifiers should be used instead of string concatenation.(€ï®«8Üüäî·1
+H	java:S106ç"+Replace this use of System.out by a logger.(À·×ª8Üüäî·1
+_
+java:S3457è"AFormat specifiers should be used instead of string concatenation.(ö®Âª8Üüäî·1
+d
+java:S3457ñ"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8Üüäî·1
+H	java:S106ô"+Replace this use of System.out by a logger.(“ĞÊ®8àîî·1
+H	java:S106÷"+Replace this use of System.out by a logger.(ÑÇï¸8õµúî·1
+_
+java:S3457û"AFormat specifiers should be used instead of string concatenation.(€ï®«8àîî·1
+M	java:S106‚"+Replace this use of System.out by a logger.(ççÏ­üÿÿÿÿ8öµúî·1
+_
+java:S3457ƒ"AFormat specifiers should be used instead of string concatenation.(ö®Âª8õµúî·1
+d
+java:S3457Œ"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8öµúî·1
+H	java:S106"+Replace this use of System.out by a logger.(“ĞÊ®8öµúî·1
+H	java:S106’"+Replace this use of System.out by a logger.(øôå8¿õâï·1
+_
+java:S3457–"AFormat specifiers should be used instead of string concatenation.(€ï®«8öµúî·1

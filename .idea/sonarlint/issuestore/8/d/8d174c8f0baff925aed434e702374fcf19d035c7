@@ -33,3 +33,7 @@ W
 java:S3457W"AFormat specifiers should be used instead of string concatenation.(—·¬
 W
 java:S3457`"AFormat specifiers should be used instead of string concatenation.(ğ¾¾Ÿ
+M
+java:S1128"0Remove this unused import 'jaime.modelos.Tipos'.(¯£­²8èÅí·1
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8èÅí·1
