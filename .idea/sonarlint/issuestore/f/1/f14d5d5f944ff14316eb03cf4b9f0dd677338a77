@@ -1,53 +1,56 @@
 
+L
+java:S37406"/Provide the parametrized type for this generic.(ÛÕ²×8£ˆú²¶1
 Q
-java:S3740o"/Provide the parametrized type for this generic.(ßäùÿÿÿÿ8´©ù‘¶1
+java:S3740q"/Provide the parametrized type for this generic.(ßäùÿÿÿÿ8¤ˆú²¶1
 R
-java:S3740"/Provide the parametrized type for this generic.(ßäùÿÿÿÿ8´©ù‘¶1
+java:S3740’"/Provide the parametrized type for this generic.(ßäùÿÿÿÿ8¤ˆú²¶1
 R
-java:S3740§"/Provide the parametrized type for this generic.(ßäùÿÿÿÿ8µ©ù‘¶1
-q
-java:S1192m"TDefine a constant instead of duplicating this literal "Respuesta enviada: " 4 times.(ìˆÚç8µ©ù‘¶1
+java:S3740©"/Provide the parametrized type for this generic.(ßäùÿÿÿÿ8¤ˆú²¶1
 p
-java:S1192e"NDefine a constant instead of duplicating this literal "Token vÃ¡lido" 3 times.(©åÄ†øÿÿÿÿ8µ©ù‘¶1
+java:S1192g"NDefine a constant instead of duplicating this literal "Token vÃ¡lido" 3 times.(©åÄ†øÿÿÿÿ8¦ˆú²¶1
 s
-java:S1192w"QDefine a constant instead of duplicating this literal "Token no vÃ¡lido" 3 times.(©ïìîúÿÿÿÿ8µ©ù‘¶1
-y
-java:S1192x"\Define a constant instead of duplicating this literal "Token no vÃ¡lido o caducado" 3 times.(Ù•®Ğ8µ©ù‘¶1
+java:S1192y"QDefine a constant instead of duplicating this literal "Token no vÃ¡lido" 5 times.(©ïìîúÿÿÿÿ8¦ˆú²¶1
+q
+java:S1192o"TDefine a constant instead of duplicating this literal "Respuesta enviada: " 4 times.(ìˆÚç8¥ˆú²¶1
+S
+java:S2629;"7Use the built-in formatting to construct this argument.(’“ğ8¨ˆú²¶1
 T
-java:S2629N"7Use the built-in formatting to construct this argument.(âÚºÕ8·©ù‘¶1
+java:S2629P"7Use the built-in formatting to construct this argument.(âÚºÕ8¨ˆú²¶1
 T
-java:S2629`"7Use the built-in formatting to construct this argument.(²éØÙ8·©ù‘¶1
+java:S2629b"7Use the built-in formatting to construct this argument.(²éØÙ8©ˆú²¶1
 Z
-java:S2629"7Use the built-in formatting to construct this argument.(…—Á·üÿÿÿÿ8·©ù‘¶1
+java:S2629ƒ"7Use the built-in formatting to construct this argument.(…—Á·üÿÿÿÿ8©ˆú²¶1
 U
-java:S2629"7Use the built-in formatting to construct this argument.(Á˜Á8·©ù‘¶1
+java:S2629Ÿ"7Use the built-in formatting to construct this argument.(Á˜Á8©ˆú²¶1
 Z
-java:S2629¯"7Use the built-in formatting to construct this argument.(×Õ§ûÿÿÿÿ8ö©‹’¶1
+java:S2629±"7Use the built-in formatting to construct this argument.(×Õ§ûÿÿÿÿ8©ˆú²¶1
 U
-java:S2629»"7Use the built-in formatting to construct this argument.(ïÈ±8·©ù‘¶1
-D
-java:S2189;""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8¾©ù‘¶1
+java:S2629¿"7Use the built-in formatting to construct this argument.(ïÈ±8©ˆú²¶1
+W
+java:S11610":Add the "@Override" annotation above this method signature(“–ış8¼ˆú²¶1
+]
+java:S3457;"AFormat specifiers should be used instead of string concatenation.(’“ğ8½ˆú²¶1
 ^
-java:S3457B"AFormat specifiers should be used instead of string concatenation.(€ï®«8Ä©ù‘¶1
+java:S3457A"AFormat specifiers should be used instead of string concatenation.(€ï®«8¾ˆú²¶1
 c
-java:S3457G"AFormat specifiers should be used instead of string concatenation.(ÿÆ’êıÿÿÿÿ8Å©ù‘¶1
+java:S3457I"AFormat specifiers should be used instead of string concatenation.(ÿÆ’êıÿÿÿÿ8Áˆú²¶1
 ^
-java:S3457N"AFormat specifiers should be used instead of string concatenation.(âÚºÕ8Æ©ù‘¶1
+java:S3457P"AFormat specifiers should be used instead of string concatenation.(âÚºÕ8Âˆú²¶1
 ^
-java:S3457`"AFormat specifiers should be used instead of string concatenation.(²éØÙ8Ì©ù‘¶1
+java:S3457b"AFormat specifiers should be used instead of string concatenation.(²éØÙ8Èˆú²¶1
 ^
-java:S3457m"AFormat specifiers should be used instead of string concatenation.(ìˆÚç8Í©ù‘¶1
+java:S3457o"AFormat specifiers should be used instead of string concatenation.(ìˆÚç8Ëˆú²¶1
 d
-java:S3457"AFormat specifiers should be used instead of string concatenation.(…—Á·üÿÿÿÿ8Ñ©ù‘¶1
+java:S3457ƒ"AFormat specifiers should be used instead of string concatenation.(…—Á·üÿÿÿÿ8Íˆú²¶1
 _
-java:S3457"AFormat specifiers should be used instead of string concatenation.(ìˆÚç8Ó©ù‘¶1
+java:S3457"AFormat specifiers should be used instead of string concatenation.(ìˆÚç8Ïˆú²¶1
 _
-java:S3457"AFormat specifiers should be used instead of string concatenation.(Á˜Á8Ô©ù‘¶1
+java:S3457Ÿ"AFormat specifiers should be used instead of string concatenation.(Á˜Á8Ğˆú²¶1
 d
-java:S3457¥"AFormat specifiers should be used instead of string concatenation.(ÊşšŞüÿÿÿÿ8Õ©ù‘¶1
+java:S3457§"AFormat specifiers should be used instead of string concatenation.(ÊşšŞüÿÿÿÿ8Ñˆú²¶1
 d
-java:S3457¯"AFormat specifiers should be used instead of string concatenation.(×Õ§ûÿÿÿÿ8±ª‹’¶1
+java:S3457±"AFormat specifiers should be used instead of string concatenation.(×Õ§ûÿÿÿÿ8Òˆú²¶1
+^	java:S125¶"<This block of commented-out lines of code should be removed.(üİŸÇÿÿÿÿÿ8Óˆú²¶1
 _
-java:S3457»"AFormat specifiers should be used instead of string concatenation.(ïÈ±8×©ù‘¶1
-_
-java:S1128"=Remove this unused import 'jaime.modelos.Request.Type.LOGIN'.(ÛÂ›œùÿÿÿÿ8´ª‹’¶1
+java:S3457¿"AFormat specifiers should be used instead of string concatenation.(ïÈ±8Ôˆú²¶1

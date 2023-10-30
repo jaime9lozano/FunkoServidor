@@ -84,6 +84,8 @@ d
 java:S3457£"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8æïú’¶1
 H	java:S106¦"+Replace this use of System.out by a logger.(“ĞÊ®8æïú’¶1
 M	java:S106ª"+Replace this use of System.out by a logger.(‹‰ÆÁûÿÿÿÿ8æïú’¶1
+_
+java:S3457°"AFormat specifiers should be used instead of string concatenation.(€ï®«8ÎŠ³¶1
 M	java:S106¸"+Replace this use of System.out by a logger.(¦ğ¾Êüÿÿÿÿ8èïú’¶1
 _
 java:S3457¹"AFormat specifiers should be used instead of string concatenation.(ö®Âª8èïú’¶1
@@ -91,6 +93,8 @@ d
 java:S3457Â"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8éïú’¶1
 H	java:S106Å"+Replace this use of System.out by a logger.(“ĞÊ®8éïú’¶1
 M	java:S106È"+Replace this use of System.out by a logger.(ú¿•ûÿÿÿÿ8éïú’¶1
+_
+java:S3457Ì"AFormat specifiers should be used instead of string concatenation.(€ï®«8ÓŠ³¶1
 M	java:S106Ó"+Replace this use of System.out by a logger.(®©ÜÓüÿÿÿÿ8êïú’¶1
 _
 java:S3457Ô"AFormat specifiers should be used instead of string concatenation.(ö®Âª8êïú’¶1
@@ -98,6 +102,8 @@ d
 java:S3457İ"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8êïú’¶1
 H	java:S106à"+Replace this use of System.out by a logger.(“ĞÊ®8êïú’¶1
 M	java:S106ã"+Replace this use of System.out by a logger.(€Ú¢Ùøÿÿÿÿ8ìïú’¶1
+_
+java:S3457ç"AFormat specifiers should be used instead of string concatenation.(€ï®«8×Š³¶1
 M	java:S106î"+Replace this use of System.out by a logger.(ú‰™’ûÿÿÿÿ8íïú’¶1
 _
 java:S3457ï"AFormat specifiers should be used instead of string concatenation.(ö®Âª8íïú’¶1
@@ -105,6 +111,8 @@ d
 java:S3457ø"AFormat specifiers should be used instead of string concatenation.(ÅæÌÿÿÿÿÿ8íïú’¶1
 H	java:S106û"+Replace this use of System.out by a logger.(“ĞÊ®8îïú’¶1
 H	java:S106ş"+Replace this use of System.out by a logger.(¹‰úÒ8îïú’¶1
+_
+java:S3457‚"AFormat specifiers should be used instead of string concatenation.(€ï®«8ÛŠ³¶1
 H	java:S106ˆ"+Replace this use of System.out by a logger.(åÀ¸ú8ïïú’¶1
 _
 java:S3457‰"AFormat specifiers should be used instead of string concatenation.(ö®Âª8ïïú’¶1
@@ -113,3 +121,5 @@ java:S3457’"AFormat specifiers should be used instead of string concatenation.
 H	java:S106•"+Replace this use of System.out by a logger.(“ĞÊ®8ğïú’¶1
 H	java:S106˜"+Replace this use of System.err by a logger.(µ·şâ8ñïú’¶1
 H	java:S106š"+Replace this use of System.out by a logger.(ñÿÔ¬8ñïú’¶1
+_
+java:S3457 "AFormat specifiers should be used instead of string concatenation.(€ï®«8ŞŠ³¶1

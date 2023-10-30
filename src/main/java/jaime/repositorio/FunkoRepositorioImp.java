@@ -91,7 +91,7 @@ public class FunkoRepositorioImp implements FunkoRepositorio{
                         .bind(6,funko.fecha_cre())
                         .bind(7,hoy)
                         .execute()
-                ).then(Mono.just(funko)), // Aquí devolvemos el objeto 'alumno' después de la inserción
+                ).then(Mono.just(funko)),
                 Connection::close
         );
     }
