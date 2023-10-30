@@ -3,10 +3,7 @@ package jaime.server;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import jaime.modelos.Login;
-import jaime.modelos.Request;
-import jaime.modelos.Response;
-import jaime.modelos.User;
+import jaime.modelos.*;
 import jaime.repositorio.FunkoRepositorioImp;
 import jaime.repositorio.UsersRepository;
 import jaime.servicios.DatabaseManager;
@@ -26,6 +23,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 
 public class ClientHandler extends Thread{
@@ -89,6 +87,10 @@ public class ClientHandler extends Thread{
             case FUNKOCARO -> processFunkoCaro((Request<String>) request);
             case FUNKOS2023 -> processFunkos2023((Request<String>) request);
             case FUNKOSSTITCH -> processFunkosStitch((Request<String>) request);
+            case ID -> processFunkoID((Request<String>) request);
+            case NUEVO -> processFunkoNuevo((Request<String>) request);
+            case ACTUALIZAR -> processFunkoActualizar((Request<String>) request);
+            case BORRAR -> processFunkoBorrar((Request<String>) request);
             case SALIR -> processSalir();
             default ->
                     out.println(gson.toJson(new Response<>(Response.Status.ERROR, "No tengo ni idea", LocalDateTime.now().toString())));
@@ -101,22 +103,13 @@ public class ClientHandler extends Thread{
         var token = request.token();
         if (TokenService.getInstance().verifyToken(token, Server.TOKEN_SECRET)) {
             logger.debug("Token válido");
-            var claims = TokenService.getInstance().getClaims(token, Server.TOKEN_SECRET);
-            var id = claims.get("userid").asInt(); // es verdad que podríamos obtener otro tipo de datos
-            var user = UsersRepository.getInstance().findByById(id);
-            if (user.isPresent() && user.get().role().equals(User.Role.ADMIN)) {
-                logger.debug("Usuario válido y admin procesamos la petición");
-                funkoServicio.findAllByNombre("Stitch")
-                        .subscribe(funkos -> {
-                            logger.debug("Respuesta enviada: " + funkos);
-                            var resJson = gson.toJson(funkos); // contenido
-                            out.println(gson.toJson(new Response(Response.Status.OK, resJson, LocalDateTime.now().toString()))); // Respuesta
-                        });
-            } else {
-                logger.warn("Usuario no válido");
-                throw new ServerException("Usuario no autorizado para esta acción");
-            }
+            List<Funko> funkosList = funkoServicio.findAllByNombre("Stitch")
+                    .collectList()
+                    .block();
 
+            logger.debug("Respuesta enviada: " + funkosList);
+            var resJson = gson.toJson(funkosList); // contenido
+            out.println(gson.toJson(new Response(Response.Status.OK, resJson, LocalDateTime.now().toString())));
         } else {
             logger.warn("Token no válido");
             throw new ServerException("Token no válido");
@@ -134,22 +127,13 @@ public class ClientHandler extends Thread{
         var token = request.token();
         if (TokenService.getInstance().verifyToken(token, Server.TOKEN_SECRET)) {
             logger.debug("Token válido");
-            var claims = TokenService.getInstance().getClaims(token, Server.TOKEN_SECRET);
-            var id = claims.get("userid").asInt(); // es verdad que podríamos obtener otro tipo de datos
-            var user = UsersRepository.getInstance().findByById(id);
-            if (user.isPresent() && user.get().role().equals(User.Role.ADMIN)) {
-                logger.debug("Usuario válido y admin procesamos la petición");
-                funkoServicio.fecha2023()
-                        .subscribe(funkos -> {
-                            logger.debug("Respuesta enviada: " + funkos);
-                            var resJson = gson.toJson(funkos); // contenido
-                            out.println(gson.toJson(new Response(Response.Status.OK, resJson, LocalDateTime.now().toString()))); // Respuesta
-                        });
-            } else {
-                logger.warn("Usuario no válido");
-                throw new ServerException("Usuario no autorizado para esta acción");
-            }
+            List<Funko> funkosList = funkoServicio.fecha2023()
+                    .collectList() // Convierte el Flux en una Lista de Funkos
+                    .block();   // Espera a que termine la operación y obtiene el resultado
 
+            logger.debug("Respuesta enviada: " + funkosList);
+            var resJson = gson.toJson(funkosList); // contenido
+            out.println(gson.toJson(new Response(Response.Status.OK, resJson, LocalDateTime.now().toString())));
         } else {
             logger.warn("Token no válido");
             throw new ServerException("Token no válido");
@@ -166,11 +150,101 @@ public class ClientHandler extends Thread{
                     .subscribe(funko -> {
                         logger.debug("Respuesta enviada: " + funko);
                         var resJson = gson.toJson(funko); // contenido
+                        out.println(gson.toJson(new Response(Response.Status.OK, resJson, LocalDateTime.now().toString())));
+                    });
+        } else {
+            logger.warn("Token no válido");
+            throw new ServerException("Token no valido o caducado");
+        }
+    }
+    private void processFunkoID(Request<String> request) throws ServerException {
+        Long id= Long.valueOf(request.content());
+        logger.debug("Petición de funko con id: " + request);
+        // Para la fecha solo vamos a comporbar que el token esté activo
+        // Si no lo está, no se procesa la petición
+        var token = request.token();
+        if (TokenService.getInstance().verifyToken(token, Server.TOKEN_SECRET)) {
+            logger.debug("Token válido");
+            funkoServicio.findById(id)
+                    .subscribe(funko -> {
+                        logger.debug("Respuesta enviada: " + funko);
+                        var resJson = gson.toJson(funko);
                         out.println(gson.toJson(new Response(Response.Status.OK, resJson, LocalDateTime.now().toString()))); // Respuesta
                     });
         } else {
             logger.warn("Token no válido");
             throw new ServerException("Token no valido o caducado");
+        }
+    }
+    private void processFunkoNuevo(Request<String> request) throws ServerException {
+        logger.debug("Petición de funko nuevo: " + request);
+
+        // Obtener el token y el objeto Funko del request
+        var token = request.token();
+        Funko funko = gson.fromJson(request.content(), Funko.class);
+
+        if (TokenService.getInstance().verifyToken(token, Server.TOKEN_SECRET)) {
+            logger.debug("Token válido");
+            funkoServicio.save(funko)
+                    .subscribe(funko1 -> {
+                        logger.debug("Respuesta enviada: " + funko1);
+                        var resJson = gson.toJson(funko1);
+                        out.println(gson.toJson(new Response(Response.Status.OK, resJson, LocalDateTime.now().toString()))); // Respuesta
+                    });
+
+        } else {
+            logger.warn("Token no válido");
+            throw new ServerException("Token no válido o caducado");
+        }
+    }
+
+    private void processFunkoActualizar(Request<String> request) throws ServerException {
+        logger.debug("Petición de funko actualizar: " + request);
+        // Para la fecha solo vamos a comporbar que el token esté activo
+        // Si no lo está, no se procesa la petición
+        var token = request.token();
+        Funko funko = gson.fromJson(request.content(), Funko.class);
+        if (TokenService.getInstance().verifyToken(token, Server.TOKEN_SECRET)) {
+            logger.debug("Token válido");
+            funkoServicio.update(funko)
+                    .subscribe(funko1 -> {
+                        logger.debug("Respuesta enviada: " + funko1);
+                        var resJson = gson.toJson(funko1);
+                        out.println(gson.toJson(new Response(Response.Status.OK, resJson, LocalDateTime.now().toString()))); // Respuesta
+                    });
+        } else {
+            logger.warn("Token no válido");
+            throw new ServerException("Token no valido o caducado");
+        }
+    }
+
+    private void processFunkoBorrar(Request<String> request) throws ServerException {
+        logger.debug("Petición de funkos borrar: " + request);
+        // Para el UUID solo vamos a comporbar que el token esté activo
+        // y que el usuario sea admin
+        var token = request.token();
+        Long id1= Long.valueOf(request.content());
+        if (TokenService.getInstance().verifyToken(token, Server.TOKEN_SECRET)) {
+            logger.debug("Token válido");
+            var claims = TokenService.getInstance().getClaims(token, Server.TOKEN_SECRET);
+            var id = claims.get("userid").asInt();
+            var user = UsersRepository.getInstance().findByById(id);
+            if (user.isPresent() && user.get().role().equals(User.Role.ADMIN)) {
+                logger.debug("Usuario válido y admin procesamos la petición");
+                funkoServicio.deleteById(id1)
+                        .subscribe(funkos -> {
+                            logger.debug("Respuesta enviada: " + funkos);
+                            var resJson = gson.toJson(funkos); // contenido
+                            out.println(gson.toJson(new Response(Response.Status.OK, resJson, LocalDateTime.now().toString()))); // Respuesta
+                        });
+            } else {
+                logger.warn("Usuario no válido");
+                throw new ServerException("Usuario no autorizado para esta acción");
+            }
+
+        } else {
+            logger.warn("Token no válido");
+            throw new ServerException("Token no válido");
         }
     }
     private void processLogin(Request<Login> request) throws ServerException {

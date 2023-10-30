@@ -1,3 +1,4 @@
+
 plugins {
     id("java")
 }
@@ -8,7 +9,6 @@ version = "1.0-SNAPSHOT"
 repositories {
     mavenCentral()
 }
-
 dependencies {
     // Project Reactor
     implementation("io.projectreactor:reactor-core:3.5.10")
@@ -37,11 +37,34 @@ dependencies {
     // BCcrypt
     implementation("org.mindrot:jbcrypt:0.4")
 
-
+    testImplementation("org.mockito:mockito-junit-jupiter:5.5.0")
+    testImplementation("org.mockito:mockito-core:5.5.0")
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
-
+task("jarCliente", type = Jar::class) {
+    archiveFileName = "client.jar"
+    manifest {
+        attributes["Main-Class"] = "jaime.client.Client"
+    }
+    configurations["compileClasspath"].forEach { file: File ->
+        from(zipTree(file.absoluteFile))
+    }
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+task("jarServidor", type = Jar::class) {
+    archiveFileName = "server.jar"
+    manifest {
+        attributes["Main-Class"] = "jaime.server.Server"
+    }
+    configurations["compileClasspath"].forEach { file: File ->
+        from(zipTree(file.absoluteFile))
+    }
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+tasks.named("build") {
+    dependsOn("jarCliente", "jarServidor")
+}
 tasks.test {
     useJUnitPlatform()
 }

@@ -1,10 +1,10 @@
 package jaime.client;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import jaime.modelos.Login;
-import jaime.modelos.Request;
-import jaime.modelos.Response;
+import jaime.modelos.*;
+import jaime.util.LocalDateAdapter;
 import jaime.util.PropertiesReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,14 +18,17 @@ import java.math.BigInteger;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.cert.X509Certificate;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 import static jaime.modelos.Request.Type.*;
 
 public class Client {
+    MyIDStore myid=MyIDStore.getInstance();
     private static final String HOST = "localhost";
     private static final int PORT = 3000;
     private final Logger logger = LoggerFactory.getLogger(Client.class);
@@ -47,11 +50,16 @@ public class Client {
     public void start() {
         try {
             openConnection();
-
+            Funko funkonuevo=new Funko(UUID.randomUUID(),"Spiderman", Tipos.MARVEL,59.0, LocalDate.now(), myid.addandgetID());
+            Funko funkoactualizar=new Funko( UUID.randomUUID(),"Stitch", Tipos.DISNEY,66.0, LocalDate.now(), myid.addandgetID());
             token=sendRequestLogin();
             sendRequestFunkoCaro(token);
             sendFunko2023(token);
             sendFunkoStitch(token);
+            sendFunkoID(token,4L);
+            sendFunkoNuevo(token,funkonuevo);
+            sendFunkoModificar(token,funkoactualizar);
+            sendFunkoBorrar(token,7L);
             sendRequestSalir();
 
         } catch (IOException e) {
@@ -178,8 +186,6 @@ public class Client {
         return myToken;
     }
     private void sendRequestFunkoCaro(String token) {
-        // Al usar el toString me ahorro el problem ade las fechas con Gson
-        // El request es del tipo del content!!
         Request<String> request = new Request<>(FUNKOCARO, null, token, LocalDateTime.now().toString());
         System.out.println("Petición enviada de tipo: " + FUNKOCARO);
         logger.debug("Petición enviada: " + request);
@@ -288,5 +294,116 @@ public class Client {
             logger.error("Error: " + e.getMessage());
         }
 
+    }
+    private void sendFunkoID(String token,Long id) {
+        // Al usar el toString me ahorro el problem ade las fechas con Gson
+        Request<String> request = new Request<>(ID, Long.toString(id), token, LocalDateTime.now().toString());
+        System.out.println("Petición enviada de tipo: " + ID);
+        logger.debug("Petición enviada: " + request);
+
+        // Enviamos la petición
+        out.println(gson.toJson(request));
+
+        // Recibimos la respuesta
+        try {
+            Response<String> response = gson.fromJson(in.readLine(), new TypeToken<Response<String>>() {
+            }.getType());
+            logger.debug("Respuesta recibida: " + response.toString());
+            // Ahora podríamos implementar un switch para cada tipo de respuesta
+            // y hacer lo que queramos con ella...
+            System.out.println("Respuesta recibida de tipo: " + response.status());
+
+            switch (response.status()) {
+                case OK -> System.out.println("🟢 El funko con id: " + id + " es: " + response.content());
+                default -> throw new ClientException("Tipo de respuesta no esperado: " + response.content());
+            }
+        } catch (IOException | ClientException e) {
+            logger.error("Error: " + e.getMessage());
+        }
+    }
+    private void sendFunkoNuevo(String token, Funko funko) {
+        Gson gson1 = new GsonBuilder()
+                .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
+                .create();
+        String funkoJson = gson1.toJson(funko);
+        Request<String> request = new Request<>(NUEVO, funkoJson, token, LocalDateTime.now().toString());
+        System.out.println("Petición enviada de tipo: " + NUEVO);
+        logger.debug("Petición enviada: " + request);
+
+        // Enviamos la petición
+        out.println(gson.toJson(request));
+
+        // Recibimos la respuesta
+        try {
+            Response<String> response = gson.fromJson(in.readLine(), new TypeToken<Response<String>>() {
+            }.getType());
+            logger.debug("Respuesta recibida: " + response.toString());
+            // Ahora podríamos implementar un switch para cada tipo de respuesta
+            // y hacer lo que queramos con ella...
+            System.out.println("Respuesta recibida de tipo: " + response.status());
+
+            switch (response.status()) {
+                case OK -> System.out.println("🟢 Funko añadido: " + response.content());
+                default -> throw new ClientException("Tipo de respuesta no esperado: " + response.content());
+            }
+        } catch (IOException | ClientException e) {
+            logger.error("Error: " + e.getMessage());
+        }
+    }
+    private void sendFunkoModificar(String token, Funko funko) {
+        Gson gson1 = new GsonBuilder()
+                .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
+                .create();
+        String funkoJson = gson1.toJson(funko);
+        Request<String> request = new Request<>(ACTUALIZAR, funkoJson, token, LocalDateTime.now().toString());
+        System.out.println("Petición enviada de tipo: " + ACTUALIZAR);
+        logger.debug("Petición enviada: " + request);
+
+        // Enviamos la petición
+        out.println(gson.toJson(request));
+
+        // Recibimos la respuesta
+        try {
+            Response<String> response = gson.fromJson(in.readLine(), new TypeToken<Response<String>>() {
+            }.getType());
+            logger.debug("Respuesta recibida: " + response.toString());
+            // Ahora podríamos implementar un switch para cada tipo de respuesta
+            // y hacer lo que queramos con ella...
+            System.out.println("Respuesta recibida de tipo: " + response.status());
+
+            switch (response.status()) {
+                case OK -> System.out.println("🟢 Funko modificado: " + response.content());
+                default -> throw new ClientException("Tipo de respuesta no esperado: " + response.content());
+            }
+        } catch (IOException | ClientException e) {
+            logger.error("Error: " + e.getMessage());
+        }
+    }
+    private void sendFunkoBorrar(String token, Long id) {
+
+        // Al usar el toString me ahorro el problem ade las fechas con Gson
+        Request<String> request = new Request<>(BORRAR, Long.toString(id), token, LocalDateTime.now().toString());
+        System.out.println("Petición enviada de tipo: " + BORRAR);
+        logger.debug("Petición enviada: " + request);
+
+        // Enviamos la petición
+        out.println(gson.toJson(request));
+
+        // Recibimos la respuesta
+        try {
+            Response<String> response = gson.fromJson(in.readLine(), new TypeToken<Response<String>>() {
+            }.getType());
+            logger.debug("Respuesta recibida: " + response.toString());
+            // Ahora podríamos implementar un switch para cada tipo de respuesta
+            // y hacer lo que queramos con ella...
+            System.out.println("Respuesta recibida de tipo: " + response.status());
+
+            switch (response.status()) {
+                case OK -> System.out.println("🟢 Funko borrado: " + response.content());
+                default -> throw new ClientException("Tipo de respuesta no esperado: " + response.content());
+            }
+        } catch (IOException | ClientException e) {
+            logger.error("Error: " + e.getMessage());
+        }
     }
 }

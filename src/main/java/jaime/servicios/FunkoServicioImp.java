@@ -112,14 +112,6 @@ public class FunkoServicioImp implements FunkoServicio{
         logger.debug("Buscando el funko mas caro");
         return funkosRepository.funkoCaro();
     }
-    public Mono<Double> mediaFunko(){
-        logger.debug("Buscando la media de los funkos");
-        return funkosRepository.mediaFunko();
-    }
-    public Flux<Map<Tipos, Integer>> agrupModelo(){
-        logger.debug("Buscando cuantos funkos hay agrupados por cada modelo");
-        return funkosRepository.agrupModelo();
-    }
     public Flux<Funko> fecha2023(){
         logger.debug("Buscando todos los funkos lanzados en 2023");
         return funkosRepository.fecha2023();
